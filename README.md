@@ -9,3 +9,4 @@ el objetivo de este bot se basa principalmente en ofrecer un soporte dinamico en
 * tqdm
 * nltk
 
+
