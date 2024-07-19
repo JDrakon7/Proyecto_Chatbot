@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Perfil</title>
+    <link rel="stylesheet" href="/assets/css/perfil.css">
+</head>
+<body>
+    <div class="profile-wrap">
+        <div class="profile-html">
+            <h2>Modificar Perfil</h2>
+            <form id="profile-form" action="updateProfile.jsp" method="post">
+                <div class="group">
+                    <label for="username" class="label">Usuario</label>
+                    <input id="username" type="text" class="input" name="username" value="${usuario.username}" required>
+                </div>
+                <div class="group">
+                    <label for="email" class="label">Email</label>
+                    <input id="email" type="email" class="input" name="email" value="${usuario.email}" required>
+                </div>
+                <div class="group">
+                    <label for="password" class="label">Nueva Contraseña</label>
+                    <input id="password" type="password" class="input" name="password">
+                </div>
+                <div class="group">
+                    <label for="confirm-password" class="label">Confirmar Nueva Contraseña</label>
+                    <input id="confirm-password" type="password" class="input" name="confirm-password">
+                </div>
+                <div class="group">
+                    <input type="submit" class="button" value="Actualizar Perfil">
+                </div>
+            </form>
+            <div class="group">
+                <a href="javascript:history.back()" class="back-button">Volver</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

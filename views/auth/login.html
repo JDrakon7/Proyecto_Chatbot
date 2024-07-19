@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Interfaz Masterbot</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="/assets/css/interfaz.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <nav class="navbar">
+    <img src="/assets/images/icono.png" class="navbar-logo" alt="logo" />
+    <ul class="navbar-list">
+      <li><a href="interfaz.jsp">Inicio</a></li>
+      <li><a href="#">Historial</a></li>
+       <li><a href="./entrenamiento.jsp">Entrenamiento</a></li>
+       <li><a href="/views/static/about.html">About</a></li>      
+    </ul>
+
+    <div class="profile-dropdown">
+      <div onclick="toggle()" class="profile-dropdown-btn">
+        <div class="profile-img">
+          <i class="fa-solid fa-circle"></i>
+        </div>
+        <span>Juan B <i class="fa-solid fa-angle-down"></i></span>
+      </div>
+
+      <ul class="profile-dropdown-list">
+        <li class="profile-dropdown-list-item"><a href="./perfil.html"><i class="fa-regular fa-user"></i> Edit Profile</a></li>
+        <li class="profile-dropdown-list-item"><a href="#"><i class="fa-solid fa-chart-line"></i> Analytics</a></li>
+        <li class="profile-dropdown-list-item"><a href="#"><i class="fa-solid fa-sliders"></i> Settings</a></li>
+        <li class="profile-dropdown-list-item"><a href="/assets/css/about.css"><i class="fa-regular fa-circle-question"></i> Help & Support</a></li>
+        <hr />
+        <li class="profile-dropdown-list-item"><a href="/index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="chat-container"></div>  
+  <div class="typing-container">
+    <div class="typing-content">
+      <div class="typing-textarea">
+        <textarea id="chat-input" spellcheck="false" placeholder="Enter a prompt here" required></textarea>
+      </div>
+      <div class="typing-controls">
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+      </div>
+      <div class="typing-controls">
+        <span id="theme-btn" class="material-symbols-rounded">light_mode</span>
+        <span id="delete-btn" class="material-symbols-rounded">delete</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="/assets/js/main.js" type="module"></script>
+
+</html>
