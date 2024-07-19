@@ -28,10 +28,10 @@
       </div>
 
       <ul class="profile-dropdown-list">
-        <li class="profile-dropdown-list-item"><a href="./perfil.html"><i class="fa-regular fa-user"></i> Edit Profile</a></li>
+        <li class="profile-dropdown-list-item"><a href="/views/user/edit_profile.htm"><i class="fa-regular fa-user"></i> Edit Profile</a></li>
         <li class="profile-dropdown-list-item"><a href="#"><i class="fa-solid fa-chart-line"></i> Analytics</a></li>
         <li class="profile-dropdown-list-item"><a href="#"><i class="fa-solid fa-sliders"></i> Settings</a></li>
-        <li class="profile-dropdown-list-item"><a href="/assets/css/about.css"><i class="fa-regular fa-circle-question"></i> Help & Support</a></li>
+        <li class="profile-dropdown-list-item"><a href="/views/static/about.html"><i class="fa-regular fa-circle-question"></i> Help & Support</a></li>
         <hr />
         <li class="profile-dropdown-list-item"><a href="/index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out</a></li>
       </ul>
@@ -56,5 +56,16 @@
 
 </body>
 <script src="/assets/js/main.js" type="module"></script>
+<script>
+  let profileDropdownList = document.querySelector(".profile-dropdown-list");
+    let btn = document.querySelector(".profile-dropdown-btn");
+    let classList = profileDropdownList.classList;
+
+    const toggle = () => classList.toggle("active");
+
+    window.addEventListener("click", function (e) {
+      if (!btn.contains(e.target)) classList.remove("active");
+    });
+</script>
 
 </html>
