@@ -4,7 +4,6 @@ Masterbot es una chatbot creado principalmente como un proyecto de certificacion
 el objetivo de este bot se basa principalmente en ofrecer un soporte dinamico en el ambito de la logica de programacion de python , enfatizando en las posibilidades y futuras especializaciones.
 
 ### Futuras aplicaciones al bot
-* python 3.5+
 * pytorch 0.4.0
 * tqdm
 * nltk
